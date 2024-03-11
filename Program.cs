@@ -15,9 +15,11 @@ sealed class Program
     {
         var app = BuildAvaloniaApp();
         var mainWindowViewModel = new MainWindowViewModel();
+        
         mainWindowViewModel.DisplayDataFromSQLite(); // Dodajemy wywołanie metody
 
         app.StartWithClassicDesktopLifetime(args);
+       
     }
     
     

@@ -1,14 +1,23 @@
 ﻿using System;
 using System.Data.SQLite;
+using System.Windows.Input;
+using Avalonia.Controls;
+using Avalonia.Markup.Xaml;
+using NartyWypo.Views;
+using ReactiveUI;
 
 namespace NartyWypo.ViewModels
 {
     public class MainWindowViewModel : ViewModelBase
     {
+        
 #pragma warning disable CA1822 // Mark members as static
         public string Greeting => "Welcome to Avalonia!";
+        
+        
 #pragma warning restore CA1822 // Mark members as static
-
+        
+        
         public void DisplayDataFromSQLite()
         {
             string connectionString = "Data Source=NartyWypo.db;Version=3;";
@@ -33,11 +42,6 @@ namespace NartyWypo.ViewModels
                     }
                 }
             }
-        }
-
-        public static void Main1(string[] args)
-        {
-            
         }
     }
 }

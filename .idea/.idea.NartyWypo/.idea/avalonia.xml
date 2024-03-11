@@ -3,6 +3,7 @@
   <component name="AvaloniaProject">
     <option name="projectPerEditor">
       <map>
+        <entry key="Views/DataFormView.axaml" value="NartyWypo.csproj" />
         <entry key="Views/MainWindow.axaml" value="NartyWypo.csproj" />
       </map>
     </option>
