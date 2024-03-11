@@ -24,6 +24,7 @@ public partial class MainWindow : Window
         Console.WriteLine("Dzień dobry!");
 
         
+        
     }
 
 }
