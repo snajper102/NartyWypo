@@ -4,18 +4,13 @@ using System.Data.SQLite;
 namespace NartyWypo.ViewModels
 {
     public class MainWindowViewModel : ViewModelBase
-    
     {
-        
 #pragma warning disable CA1822 // Mark members as static
         public string Greeting => "Welcome to Avalonia!";
-        
-        
 #pragma warning restore CA1822 // Mark members as static
-        
+
         public void DisplayDataFromSQLite()
-        {Console.WriteLine("Odpalono polaczenie z baza");
-            
+        {
             string connectionString = "Data Source=NartyWypo.db;Version=3;";
 
             using (SQLiteConnection connection = new SQLiteConnection(connectionString))
@@ -38,8 +33,11 @@ namespace NartyWypo.ViewModels
                     }
                 }
             }
+        }
+
+        public static void Main1(string[] args)
+        {
             
         }
     }
-    
 }
