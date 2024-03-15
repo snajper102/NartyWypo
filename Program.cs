@@ -14,9 +14,7 @@ sealed class Program
     public static void Main(string[] args)
     {
         var app = BuildAvaloniaApp();
-        var mainWindowViewModel = new MainWindowViewModel();
-        
-        mainWindowViewModel.DisplayDataFromSQLite(); // Dodajemy wywołanie metody
+    
 
         app.StartWithClassicDesktopLifetime(args);
        
@@ -29,7 +27,7 @@ sealed class Program
         => AppBuilder.Configure<App>()
             .UsePlatformDetect()
             .WithInterFont()
-            .LogToTrace();
-
+            .LogToTrace()
+            .UseReactiveUI();
 
 }

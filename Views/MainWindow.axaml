@@ -3,6 +3,7 @@
         xmlns:vm="using:NartyWypo.ViewModels"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:global="clr-namespace:"
         mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
         x:Class="NartyWypo.Views.MainWindow"
         x:DataType="vm:MainWindowViewModel"
@@ -17,10 +18,11 @@
         <vm:MainWindowViewModel/>
     </Design.DataContext>
 
-    <StackPanel HorizontalAlignment="Left" VerticalAlignment="Center">
+    <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center">
         <Button HorizontalAlignment="Left" VerticalAlignment="Center" Click="Button_Click">
-            Cos se 
+            Cos
             </Button>
+        <Button Command="{Binding BuyMusicCommand}" HorizontalAlignment="Right" VerticalAlignment="Top"/>
         
     </StackPanel>
 

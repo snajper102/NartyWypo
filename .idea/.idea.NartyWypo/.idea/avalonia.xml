@@ -3,8 +3,11 @@
   <component name="AvaloniaProject">
     <option name="projectPerEditor">
       <map>
+        <entry key="App.axaml" value="NartyWypo.csproj" />
+        <entry key="ViewModels/AlbumViewModel.axaml" value="NartyWypo.csproj" />
         <entry key="Views/DataFormView.axaml" value="NartyWypo.csproj" />
         <entry key="Views/MainWindow.axaml" value="NartyWypo.csproj" />
+        <entry key="Views/Test.axaml" value="NartyWypo.csproj" />
       </map>
     </option>
   </component>
