@@ -20,7 +20,7 @@ public partial class DataFormView : ReactiveWindow<DataFormViewModel>
                 AvaloniaXamlLoader.Load(this);
             }
 
-
+ 
         }
     }
 }
