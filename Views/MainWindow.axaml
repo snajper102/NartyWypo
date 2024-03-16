@@ -22,7 +22,7 @@
         <Button HorizontalAlignment="Left" VerticalAlignment="Center" Click="Button_Click">
             Cos
             </Button>
-        <Button Command="{Binding BuyMusicCommand}" HorizontalAlignment="Right" VerticalAlignment="Top"/>
+        <Button Command="{Binding BuyMusicCommand}" HorizontalAlignment="Right" VerticalAlignment="Top">Otworzenie nowego okna</Button>
         
     </StackPanel>
 
